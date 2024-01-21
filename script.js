@@ -25,12 +25,10 @@ function shuffleArray(arr) {
   return arr;
 };
 
-arr_int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-console.log(arr_int);
-console.log(shuffleArray(arr_int));
-console.log(shuffleArray(arr_int));
-console.log(shuffleArray(arr_int));
-console.log(shuffleArray(arr_int));
-console.log(shuffleArray(arr_int));
-console.log(arr_int);
+int_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+const generatorButton = document.querySelector('#generateButton');
+generatorButton.addEventListener('click', () => {
+  console.log(shuffleArray(int_array));
+});
