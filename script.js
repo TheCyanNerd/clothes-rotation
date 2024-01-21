@@ -73,5 +73,5 @@ const shirts = [
 
 const generatorButton = document.querySelector('#generateButton');
 generatorButton.addEventListener('click', () => {
-  console.log(shuffleArray(shirts));
+  console.log(shuffleArray(shirts).slice(0, 6));
 });
