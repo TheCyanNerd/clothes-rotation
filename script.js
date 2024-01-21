@@ -71,7 +71,19 @@ const shirts = [
   }
 ]
 
+
+const resultWindow = document.querySelector('#window');
+
 const generatorButton = document.querySelector('#generateButton');
 generatorButton.addEventListener('click', () => {
-  console.log(shuffleArray(shirts).slice(0, 6));
+  resultWindow.innerHTML = "";
+
+  resultArray = shuffleArray(shirts).slice(0, 6);
+  console.log(resultArray);
+  
+  resultWindow.appendChild(document.createElement('div'));
+  numResults = resultArray.length;
+  for(i = 0; i < numResults; i++) {
+    resultWindow.lastChild.innerText += resultArray[i]["type"] + " " + resultArray[i]["color"] + "\n";
+  }
 });
