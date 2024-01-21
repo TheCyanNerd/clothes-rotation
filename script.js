@@ -9,6 +9,28 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 };
 
-for(i = 0; i < 100; i++) {
-  console.log(getRandomInt(11, 83));
-}
+
+/*
+Implementation of the Fisher-Yates shuffle to randomize the choices
+  in-place shuffle, modifies the original array
+  time complexity: O(n)
+  https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+*/
+function shuffleArray(arr) {
+  n = arr.length;
+  for(i = n-1; i >= 1; i--) {
+    j = getRandomInt(0, i+1);           // max excluded, 0 < =j <= i as required
+    [arr[j], arr[i]] = [arr[i], arr[j]];
+  }
+  return arr;
+};
+
+arr_int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+console.log(arr_int);
+console.log(shuffleArray(arr_int));
+console.log(shuffleArray(arr_int));
+console.log(shuffleArray(arr_int));
+console.log(shuffleArray(arr_int));
+console.log(shuffleArray(arr_int));
+console.log(arr_int);
