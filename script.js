@@ -26,9 +26,52 @@ function shuffleArray(arr) {
 };
 
 
-int_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const shirts = [
+  {
+    "type": "t-shirt",
+    "color": "light blue",
+    "size": "M",
+    "brand": "Gap"
+  },
+  {
+    "type": "t-shirt",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "t-shirt",
+    "color": "blue green",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "henley",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "henley",
+    "color": "dark gray",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "polo",
+    "color": "dark grey",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "polo",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Gap"
+  }
+]
 
 const generatorButton = document.querySelector('#generateButton');
 generatorButton.addEventListener('click', () => {
-  console.log(shuffleArray(int_array));
+  console.log(shuffleArray(shirts));
 });
