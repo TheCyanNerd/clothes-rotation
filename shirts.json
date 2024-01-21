@@ -1,0 +1,44 @@
+[
+  {
+    "type": "t-shirt",
+    "color": "light blue",
+    "size": "M",
+    "brand": "Gap"
+  },
+  {
+    "type": "t-shirt",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "t-shirt",
+    "color": "blue green",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "henley",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "henley",
+    "color": "dark gray",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "polo",
+    "color": "dark grey",
+    "size": "M",
+    "brand": "Old Navy"
+  },
+  {
+    "type": "polo",
+    "color": "navy blue",
+    "size": "M",
+    "brand": "Gap"
+  }
+]
