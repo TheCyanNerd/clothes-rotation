@@ -14,7 +14,13 @@ body {
   padding: 3em 2em;
 }
 
-h1 {
+h1,
+button {
   color: rgb(48, 48, 48);
   margin: 0 0 2em 0;
+}
+
+button {
+  border-radius: 1em;
+  padding: 1em;
 }
